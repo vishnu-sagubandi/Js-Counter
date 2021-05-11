@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+h1 {
+  font-family: "Reggae One", cursive;
+  font-size: 3rem;
+  padding: 1rem;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.day,
+.min,
+.hour,
+.sec {
+  font-size: 2rem;
+}
+
+.container-day,
+.container-min,
+.container-hour,
+.container-sec {
+  background-color: rgba(215, 215, 255, 0.726);
+  width: 6rem;
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+
+.colon {
+  font-size: 3rem;
+}
+h3 {
+  font-family: "Reggae one", cursive;
+}
+h4 {
+  font-size: 1.5rem;
+}
+.launcher {
+  margin: 1rem;
+  height: 50vh;
+}
+
+@media screen and (max-width: 600px) {
+  .launcher {
+    width: 90vw;
+  }
+  .container-day,
+  .container-min,
+  .container-hour,
+  .container-sec {
+    width: 5rem;
+    padding: 0.3rem;
+    border-radius: 4px;
+  }
+  .colon {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container-day,
+  .container-min,
+  .container-hour,
+  .container-sec {
+    width: 4rem;
+    padding: 0.2rem;
+    border-radius: 3px;
+  }
+  .colon {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+}
